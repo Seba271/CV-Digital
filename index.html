@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Curriculum Vitae de Sebastián Peña">
+        <title>CV de Sebastián Peña</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="icon" href="https://img.icons8.com/ultraviolet/40/parse-from-clipboard.png" type="image/png">
+
+    </head>
+    
+    
+<body>
+    <div class="hero">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#about">Acerca de mí</a></li>
+                    <li><a href="#education">Formación Academica</a></li>
+                    <li><a href="#experience">Experiencia Laboral</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#languages">Idiomas</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="hero-content">
+            <img src="images/fotoformal.png" alt="foto" class="profile-photo">
+            <h1>Sebastián Peña</h1>
+            <p>Desarrollador Web | Backend | full-stack</p>
+            <button id="contactButton">Contáctame</button>
+        </div>
+    </div>
+
+    <main>
+        <section id="about">
+            <h2>Acerca de mí</h2>
+            <p>Soy una persona entusiasta y organizada, con una excelente capacidad para adaptarme rápidamente a los cambios. Me destaco por mantener la calma y tomar decisiones acertadas bajo presión. Innovar es una constante en todo lo que hago, ya que siempre busco nuevas formas de mejorar procesos y resultados. Además, me resulta sencillo colaborar con equipos, fomentando un ambiente de trabajo positivo y eficiente. Tengo habilidades sólidas para dirigir grupos de manera eficaz, motivando a las personas a alcanzar sus objetivos comunes con un enfoque claro y estratégico. Actualmente, soy estudiante de la Universidad Central, lo que complementa mi formación con conocimientos actualizados en el área tecnológica.</p>
+        </section>
+
+        <section id="education">
+            <h2>Formación Académica</h2>
+            <ul>
+                <li><strong>Universidad Central de Chile</strong> – Ingeniería Civil en Computación e Informática  (2020-Actualidad)</li>
+                <li><strong>Curso de Programación Web</strong> – FreeCodeCamp (2021)</li>
+                <li><strong>Curso de Ciberseguridad</strong> – IBM (2024)</li>
+                <li><strong>Curso de Backend</strong> – IBM (2024)</li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Experiencia Laboral</h2>
+            <ul>
+                <li><strong>Gobierno Regional Coquimbo</strong> – Desarrollador Web (2023)</li>
+                <p>Responsabilidades: Desarrollo de Sistema De Gestión De Licitaciones, optimización de rendimiento web.</p>
+                <li><strong>Universidad de harvard</strong> – Asistente Técnico (2024)</li>
+                <p>Responsabilidades: Soporte técnico y mantenimiento de sistemas informáticos.</p>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Habilidades Técnicas</h2>
+            <ul class="skills-list">
+                <li>
+                    HTML5
+                    <div class="stars">
+                        ★★★★☆
+                    </div>
+                </li>
+                <li>
+                    Codeigniter 5
+                    <div class="stars">
+                        ★★★★☆
+                    </div>
+                </li>
+                <li>
+                    JavaScript
+                    <div class="stars">
+                        ★★★☆☆
+                    </div>
+                </li>
+                <li>
+                    PHP
+                    <div class="stars">
+                        ★★★☆☆
+                    </div>
+                </li>
+                <li>
+                    Neo4j
+                    <div class="stars">
+                        ★★☆☆☆
+                    </div>
+                </li>
+                <li>
+                    Laravel
+                    <div class="stars">
+                        ★★★★☆
+                    </div>
+                </li>
+            </ul>
+        </section>
+        
+        <section id="projects">
+            <h2>Proyectos</h2>
+            <ul>
+                <li><strong>Proyecto de E-commerce con Neo4j</strong>
+                    <li>Creación de una página de comercio electrónico con base de datos Neo4j e implementación de sistemas de recomendaciones personalizados para los usuarios.</li>
+                </li>
+                <li><strong>Aplicación para Ver el Clima</strong>
+                    <li>Desarrollo de una página web para consultar el clima en tiempo real, utilizando APIs meteorológicas. <a href="https://github.com/tu-usuario/proyecto-clima">Ver en GitHub</a></li>
+                </li>
+                <li><strong>Robot con Arduino</strong>
+                    <li>Modificación de un robot con Arduino para que se desplazara y evitara obstáculos mediante sensores ultrasónicos.</li>
+                </li>
+                <li><strong>Aplicación con Teoría de Voronoi</strong>
+                    <li>Desarrollo de un programa que usa la teoría de Voronoi para optimizar distribución de puntos en un espacio determinado.</li>
+                </li>
+                <li><strong>Gestor de Licitaciones</strong>
+                    <li>Creación de un sistema de gestión de licitaciones para el gobierno regional, facilitando la administración y seguimiento de procesos de contratación.</li>
+                </li>
+            </ul>
+        </section>
+        
+        
+
+        <section id="languages">
+            <h2 >Idiomas </h2>
+            <ul class="skills-list">
+                <li>
+                    Español
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+                </li>
+                <li>
+                    Inglés
+                    <div class="stars">
+                        ★★★☆☆
+                    </div>
+                </li>
+                
+            </ul>
+        </section>
+
+        <form id="contactForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="from_name" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="from_email" required>
+            
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="formResponse"></div>
+        
+        
+        
+        
+
+        <section id="contact1">
+            <h2>Otros medios</h2>
+            <ul>
+                <li><strong>Email</strong> sebastianalejandro271@hotmail.com</li>
+                <li><strong>Numero</strong> +56932903648</li>
+                <li>
+                    <a href="https://www.linkedin.com/in/sebasti%C3%A1n-pe%C3%B1a-cofr%C3%A9-b3a312273/">
+                        <img width="48" height="48" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/>
+                    </a>
+                    <a href="https://github.com/Seba271">
+                        <img width="48" height="48" src="https://img.icons8.com/fluency/48/github.png" alt="github"/>
+                    </a>
+
+                </li>
+            </ul>
+        </section>
+        <!-- Botón de volver arriba -->
+<button id="scrollToTop" title="Volver arriba">↑</button>
+
+
+    </main>
+
+    <footer>
+        <p>© 2024 Sebastián Peña. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    
+
+
+</body>
+</html>

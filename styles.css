@@ -1,0 +1,242 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #4CAF50 0%, #1e88e5 100%);
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 20px;
+}
+
+#contactButton {
+    background-color: #ff9800;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contactButton:hover {
+    background-color: #f57c00;
+}
+/* Estilos para la Formación Académica */
+#education ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 18px;
+}
+
+#education ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para la Experiencia Laboral */
+#experience ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 18px;
+}
+
+#experience ul li {
+    margin-bottom: 10px;
+}
+
+#experience p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la sección de habilidades tecnicas */
+
+.stars {
+    color: #FFD700; /* Color dorado para las estrellas */
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+
+/* Estilos para la sección de Idiomas */
+#languages ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 18px;
+}
+
+#languages ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para el formulario de contacto */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #388E3C;
+}
+
+/* Ajustes adicionales para las secciones */
+section {
+    padding: 40px 20px;  /* Ajuste del padding para hacerlo más compacto */
+    max-width: 900px;    /* Incremento del ancho máximo */
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    #education ul, #experience ul, #languages ul {
+        text-align: left; /* Alineación de texto a la izquierda en pantallas pequeñas */
+    }
+}
+
+
+/* Navegación */
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: 600;
+}
+
+/* Secciones */
+section {
+    padding: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .skills-list {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+
+
+/* Estilo para el cambio de color del encabezado */
+header {
+    transition: background-color 0.3s ease;
+}
+header.scrolled {
+    background-color:  #4caf4f70; /* Cambia el color de fondo cuando se desplaza */
+    color: #fff; /* Cambia el color del texto cuando se desplaza */
+}
+
+/* Estilo para el botón de volver arriba */
+#scrollToTop {
+    position: fixed;
+    bottom: 20px; /* Distancia desde el fondo de la página */
+    right: 20px; /* Distancia desde el borde derecho de la página */
+    width: 50px; /* Ancho del botón */
+    height: 50px; /* Altura del botón */
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 50%; /* Bordes redondeados para hacer un círculo */
+    text-align: center; /* Centrar el texto */
+    line-height: 50px; /* Alinear el texto verticalmente */
+    font-size: 24px; /* Tamaño del texto */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.3s ease; /* Transición para la opacidad */
+}
+
+#scrollToTop.show {
+    opacity: 1; /* Mostrar cuando tenga la clase "show" */
+}
+
